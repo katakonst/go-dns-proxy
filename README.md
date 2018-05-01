@@ -4,15 +4,15 @@ A simple DNS proxy written in go on top of [github.com/miekg/dns](https://github
 ## How to use it
 
 
-#Docker
+# Docker
 ```
 ```
-#Download executables
+# Download executables
 ```
 [Download](https://github.com/katakonst/go-dns-proxy/releases)
 ```
 
-#GO get
+# GO get
 ```shell
 $ go get github.com/katakonst/go-dns-proxy
 ```
