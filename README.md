@@ -13,7 +13,7 @@ $ docker run -p 53:53/udp katakonst/go-dns-proxy:latest -use-outbound -json-conf
         "google.com" : "8.8.8.8:53"
     },
     "domains": {
-        "test.com." : "8.8.8.8"
+        "test.com" : "8.8.8.8"
     }
 }'
 ```
@@ -32,7 +32,7 @@ $ go-dns-proxy -use-outbound -json-config='{
         "google.com" : "8.8.8.8:53"
     },
     "domains": {
-        "test.com." : "8.8.8.8"
+        "test.com" : "8.8.8.8"
     }
 }'
 ```
@@ -57,7 +57,7 @@ $ go-dns-proxy -use-outbound -json-config='{
         "google.com" : "8.8.8.8:53"
     },
     "domains": {
-        ".*.com." : "8.8.8.8"
+        ".*.com" : "8.8.8.8"
     }
 }
 ```
