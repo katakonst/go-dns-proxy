@@ -58,7 +58,7 @@ func (proxy *DNSProxy) processOtherTypes(dnsServer string, q *dns.Question, requ
 	if len(msg.Answer) > 0 {
 		return &msg.Answer[0], nil
 	}
-	return nil, nil
+	return nil, fmt.Errorf("not found")
 }
 
 func (proxy *DNSProxy) processTypeA(dnsServer string, q *dns.Question, requestMsg *dns.Msg) (*dns.RR, error) {
