@@ -41,7 +41,7 @@ $ go-dns-proxy -use-outbound -json-config='{
 
 ```
 	-file		 config filename
-	-log-level	 log level(info or error)
+	-log-level	 log level(info,error or discard)
 	-expiration      cache expiration time in seconds
 	-use-outbound	 use outbound address as host for server
         -config-json     configs as json
