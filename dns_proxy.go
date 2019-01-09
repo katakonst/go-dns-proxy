@@ -74,10 +74,14 @@ func (proxy *DNSProxy) processTypeA(dnsServer string, q *dns.Question, requestMs
 		if err != nil {
 			return nil, err
 		}
+		fmt.Println("Test")
+		fmt.Println(msg.Answer)
+		fmt.Println("Test2")
+		fmt.Println(msg.Answer[len(msg.Answer)-1])
 
 		if len(msg.Answer) > 0 {
-			proxy.Cache.Set(q.Name, &msg.Answer[0])
-			return &msg.Answer[0], nil
+			proxy.Cache.Set(q.Name, &msg.Answer[len(msg.Answer)-1])
+			return &msg.Answer[len(msg.Answer)-1], nil
 		}
 
 	} else if found {
